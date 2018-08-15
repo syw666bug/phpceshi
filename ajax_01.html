@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<title>自定义</title>
+		<meta charset="utf-8">
+		<style>
+			h3{
+				margin-left:50px;
+			}
+			ul{
+				list-style:none;
+			}
+			ul li{
+				padding:10px;
+			}
+			ul li:nth-child(3) input{
+				margin-right:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>用户注册</h3>
+		<form action="#" method="post" id="dd">
+			<ul>
+				<li>用户名:<input type="text" name="name" placeholder="请输入用户名"></li>
+				<li>密&nbsp;码:<input type="password" name="pwd" placeholder="请输入密码"></li>
+				<li><input type="submit" value="注册"><input type="reset" value="重填"></li>
+			</ul>
+		</form>
+		<script>
+			//构建对象
+			var http = null;
+			if(window.XMLHttpRequest){
+				// CH FF Sa IE9+
+				http= new XMLHttpRequest();
+			}else{
+				//IE8-
+				http= new
+				ActiveXObject('Microsoft.XHLHTTP');
+			}
+			alert(http);
+		</script>
+	</body>
+</html>
